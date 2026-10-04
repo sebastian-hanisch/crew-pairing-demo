@@ -1,5 +1,7 @@
 # Crew Pairing: Besatzungseinsatz im Zugverkehr (Streamlit-Demo)
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-crew-pairing-demo.streamlit.app/)**
+
 Interaktive **Fall-Demo** zum **Crew Pairing** im Portfolio von [Sebastian Hanisch](https://sebastianhanisch.net) (Operations Research und Machine Learning). **Zweiter Baustein der
 Reihe Bahn/Schienenverkehr** nach dem [Taktfahrplan](https://github.com/sebastian-hanisch/taktfahrplan-demo): Die Züge fahren, jetzt braucht jede Fahrt eine Besatzung.
 
