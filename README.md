@@ -9,6 +9,8 @@ Aus Zugumläufen auf einer Strecke, zwei Heimatbasen und einem Regelwerk (ununte
 mehrere Tage, die an der Heimatbasis beginnen und enden. Die Paarungen werden nicht aufgezählt, sondern per **Spaltengenerierung** mit einem **Ressourcen-Kürzesten-Weg** als Pricing
 erzeugt. Die Demo zeigt vor allem, **was jede einzelne Regel kostet**, und ehrlich, wie weit die Lösung von der Schranke entfernt ist.
 
+Weitere Bausteine der Reihe: [Taktfahrplan](https://github.com/sebastian-hanisch/taktfahrplan-demo), [Trassenkonflikt](https://github.com/sebastian-hanisch/trassenkonflikt-demo), [Fahrzeitreserve](https://github.com/sebastian-hanisch/fahrzeitreserve-demo), [Energieoptimale Fahrweise](https://github.com/sebastian-hanisch/energiefahrweise-demo), [Ablaufberg](https://github.com/sebastian-hanisch/ablaufberg-demo). Die ganze Reihe mit Querverweisen auf verwandte Modelle steht auf der Seite [Schienenverkehr optimieren](https://sebastianhanisch.net/schienenverkehr-optimierung.html).
+
 ## Kernfrage
 
 Was kostet jede Regel des Besatzungseinsatzes, und wie viel verschenkt ein gieriges Vorgehen gegenüber der Spaltengenerierung? Die Frage ist **nicht** „Column Generation gegen Heuristik“ als
@@ -100,7 +102,7 @@ python -m pytest tests -q
 
 ## Bewusst nicht umgesetzt
 
-Branch-and-Price, Fahrzeugumlauf (nächster Baustein der Reihe), Rostering, Wochenruhe, Nachtdienst-Zuschläge, mehrere Fahrzeugtypen und Streckenkenntnis, Störungsmanagement.
+Branch-and-Price, Fahrzeugumlauf (bei einem Depot ein Zuordnungs- bzw. Min-Cost-Flow-Problem, kein eigener Baustein der Reihe), Rostering, Wochenruhe, Nachtdienst-Zuschläge, mehrere Fahrzeugtypen und Streckenkenntnis, Störungsmanagement.
 
 ## Lokal ausführen
 
