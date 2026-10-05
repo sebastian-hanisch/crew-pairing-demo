@@ -33,7 +33,7 @@ Selbstzweck: Die Master-Struktur ist die aus [column-generation-demo](https://gi
   (`crw_rng.py`, `crw_network.py`); 3 / 4 / 5 Züge ergeben im Mittel 47 / 69 / 88 überdeckbare Teilstrecken.
 - **Dienst und Paarung** (`crw_rules.py`): Ein Dienst ist eine Kette von Fahrten, jede **gefahren** (überdeckt, zählt als Lenkzeit) oder **mitgefahren** (überdeckt nicht, zählt als Pause).
   Standard: höchstens 11 h Dienstspanne, 8 h Lenkzeit, 4,5 h ununterbrochen (eine Lücke ab 30 min unterbricht), Dienst mindestens bezahlt wie 300 min. Eine Paarung verbindet bis zu 3 Dienste durch
-  Ruhezeiten von mindestens 9 h; wer sie nicht an der Heimatbasis verbringt, kostet eine Hotelnacht (500). Alle Kosten in Minutenäquivalenten.
+  Ruhezeiten von mindestens 9 h und höchstens 30 h (der nächste Dienst beginnt spätestens 30 h nach dem Ende des vorigen; die Ruhezeit-Varianten ändern nur die Untergrenze); wer sie nicht an der Heimatbasis verbringt, kostet eine Hotelnacht (500). Alle Kosten in Minutenäquivalenten.
 - **Master** (`crw_master.py`): Mengenüberdeckung: jede Fahrt wird von mindestens einer Paarung gefahren. Strafspalten (5 000 je Fahrt) lassen Fahrten unüberdeckt, wenn eine Regel sie unüberdeckbar macht.
 - **Pricing** (`crw_pricing.py`): Labeling je Heimatbasis über die nach Abfahrt geordneten Fahrten. Ein Label trägt reduzierte Kosten, Dienstbeginn, Lenkzeit und ununterbrochene Lenkzeit;
   Dominanz streicht Labels, die nicht teurer, später begonnen und weniger verbraucht sind.

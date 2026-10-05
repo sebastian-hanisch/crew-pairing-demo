@@ -232,7 +232,7 @@ with st.expander("Wie funktioniert diese Demo?"):
 Im selben Zug sitzen bleiben braucht keine Umsteigezeit, an jeder Station kann gewechselt werden (15 min Mindestzeit zwischen verschiedenen Zügen). Alles ganzzahlig, mit dem Zufallsgenerator SplitMix64 erzeugt.
 
 **Paarung und Regeln.** Ein *Dienst* ist eine Kette von Fahrten (gefahren oder als Fahrgast mitgefahren). Er darf höchstens die gewählte Dienstspanne dauern, höchstens 8 Stunden Lenkzeit haben und höchstens die gewählte
-Zeit ununterbrochen lenken (eine Lücke ab 30 min oder Mitfahren unterbricht). Eine *Paarung* verbindet bis zu drei Dienste durch Ruhezeiten, beginnt und endet an derselben Heimatbasis; wer die Ruhezeit auswärts
+Zeit ununterbrochen lenken (eine Lücke ab 30 min oder Mitfahren unterbricht). Eine *Paarung* verbindet bis zu drei Dienste durch Ruhezeiten (der nächste Dienst beginnt spätestens 30 Stunden nach dem Ende des vorigen), beginnt und endet an derselben Heimatbasis; wer die Ruhezeit auswärts
 verbringt, kostet eine Hotelnacht. Ein Dienst wird mit mindestens 300 (Garantie), sonst mit seiner Spanne bezahlt.
 
 **Ziel.** Jede Fahrt wird von mindestens einer Paarung gefahren (Mehrfachüberdeckung entspricht Mitfahren); gesucht sind die billigsten Paarungen. Fahrten, die ein Regelwerk unüberdeckbar macht
